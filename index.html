@@ -5,17 +5,21 @@ body{
 }
 </style>
 <div id=main>
-<div id="observablehq-chart-71b29a59"></div>
-<div id="observablehq-viewof-search-71b29a59"></div>
+<div id="observablehq-chart-9cf74ed0"></div>
+<div id="observablehq-viewof-selOpenMap-9cf74ed0"></div>
+<div id="observablehq-viewof-search-9cf74ed0"></div>
+
 </div>
+
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/d/b341c3e0840f85e8.js?v=4";
+import define from "https://api.observablehq.com/d/b341c3e0840f85e8@249.js?v=4";
 new Runtime().module(define, name => {
-  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-71b29a59"));
-  if (name === "viewof search") return new Inspector(document.querySelector("#observablehq-viewof-search-71b29a59"));
+  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-9cf74ed0"));
+  if (name === "viewof selOpenMap") return new Inspector(document.querySelector("#observablehq-viewof-selOpenMap-9cf74ed0"));
+  if (name === "viewof search") return new Inspector(document.querySelector("#observablehq-viewof-search-9cf74ed0"));
   return ["setevent"].includes(name);
 });
 </script>
